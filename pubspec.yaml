@@ -1,0 +1,70 @@
+name: loan_manager
+description: A professional loan management application for tracking personal loans, payments, and due dates with secure encryption.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  # Core Framework
+  flutter:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  
+  # State Management
+  provider: ^6.1.1 
+
+  # Internationalization & Formatting
+  intl: ^0.19.0 
+
+  # Database & Storage
+  sqflite_sqlcipher: ^3.1.0 
+  flutter_secure_storage: ^9.0.0
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # Notifications & Time
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+  
+  # File Operations
+  file_picker: ^8.0.0
+  
+  # PDF Generation
+  
+  
+  # Platform Integration
+  url_launcher: ^6.2.4
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.1
+  
+  # Icon Generator
+  flutter_launcher_icons: ^0.13.1
+
+# ==========================================
+# FLUTTER CONFIGURATION
+# ==========================================
+flutter:
+  # This was the error source. It is now fixed:
+  uses-material-design: true
+
+  # Uncomment these lines after you add the files to your project
+  # assets:
+  #   - assets/icon/
+
+# Icon Generator Configuration
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/unnamed.jpg"
+  min_sdk_android: 21
